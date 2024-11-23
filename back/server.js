@@ -14,7 +14,7 @@ const API_KEY=process.env.EXCHANGE_RATE_API_KEY;
 
 //cors with front end
 const corsOption={
-    origin: ["http://localhost:5173"]
+    origin: ["https://currency-converter-mern-melekus-websites.onrender.com"]
 }
 app.use(cors(corsOption))
 app.use(express.json())

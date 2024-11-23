@@ -10,6 +10,10 @@ export default function App() {
   const [result, setResult] = useState([]);
   const [error, setError] = useState('');
   const currencyCode = ['USD', 'CNY', 'ETB', 'EUR','KES','CAD', 'JPY', 'GHS'];
+  const API_BASE_URL =
+    process.env.NODE_ENV === 'production'
+      ? 'https://currency-converter-melaku-website.onrender.com'
+      : 'http://localhost:5000';
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -24,8 +28,7 @@ export default function App() {
 
     try {
       const response = await axios.post(
-        'http://localhost:5000/api/convert',
-        formData
+        `${API_BASE_URL}/api/convert`,        formData
       );
       setResult(response?.data);
       setError('');

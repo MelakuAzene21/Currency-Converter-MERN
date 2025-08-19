@@ -3,6 +3,7 @@
 A professional, feature-rich currency converter application with real-time exchange rates, historical data, and a modern, responsive UI.
 
 ![Currency Converter](https://img.shields.io/badge/React-18.3.1-blue)
+![TypeScript](https://img.shields.io/badge/TypeScript-5.3.2-blue)
 ![Backend](https://img.shields.io/badge/Node.js-Express-green)
 ![API](https://img.shields.io/badge/ExchangeRate-API-orange)
 ![License](https://img.shields.io/badge/License-MIT-yellow)
@@ -71,9 +72,10 @@ A professional, feature-rich currency converter application with real-time excha
    NODE_ENV=development
    ```
 
-5. **Start the backend server**
+5. **Build and start the backend server**
    ```bash
    cd back
+   npm run build
    npm start
    ```
 
@@ -243,12 +245,14 @@ Health check endpoint.
 
 ### Frontend
 - **React 18**: Modern React with hooks
+- **TypeScript**: Type-safe development
 - **Vite**: Fast build tool and dev server
 - **Axios**: HTTP client for API calls
 - **CSS3**: Modern styling with CSS variables and flexbox/grid
 
 ### Backend
 - **Node.js**: JavaScript runtime
+- **TypeScript**: Type-safe development
 - **Express.js**: Web framework
 - **Axios**: HTTP client for external API calls
 - **CORS**: Cross-origin resource sharing
